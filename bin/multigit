@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require "rubygems"
+
+require File.expand_path(File.dirname(__FILE__) + "/../lib/multigit")
+require "multigit/cli"
+
+result = Multigit::CLI.execute(ARGV.dup)
+Kernel.exit(result)
